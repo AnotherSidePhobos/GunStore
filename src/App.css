@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+.sidebar{
+  background-color: rgb(181, 212, 233);
+  padding: 10px;
+  min-height: 100vh;
+  margin-bottom: 16px;
+
+}
+.main-area{
+  /* background-color: #B5C7E9; */
+  padding: 10px;
+}
+.cart{
+  padding: 10px;
+}
+.image{
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+.image__min{
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 auto;
+}
+.product-container{
+  border: 6px solid lightgray;
+  margin: 6px;
+  padding: 10px;
+}
+.cart__block{
+  display: flex;
+}
+.ulHeader{
+  display: flex;
+  justify-content: space-between;
+  min-width: 1200px;
+}
+.title__and-price{
+  display: flex;
+  justify-content: space-between;
+}
+.cart__title{
+  text-align: center;
+}
+.gods__cart{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.gods__item{
+  justify-content: space-around;
+  display: flex;
+  align-items:baseline;
+  
+}
+.gods__item-title{
+  text-align: center;
+}
+.pagination span{
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.sidbar button{
+  width: 100%;
+  margin-bottom: 5px;
+}
+.delete__btn{
+  min-width: 100px;
+  float:none
+}
+table td{
+  max-width: 10px;
+  text-align: center;
+}
+.footer{
+  text-align: center;
+  min-height: 30px;
+  background-color: #b5d4e9;
+}
