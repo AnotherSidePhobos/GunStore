@@ -9,6 +9,9 @@ import {fetchProductsByCategoryApi} from './../../api/api';
 import {fetchPhonesCountByCat} from './../../api/api';
 import {fetchPhonesApi} from './../../api/api';
 import {fetchPhonesCount} from './../../api/api';
+import { Link } from 'react-router-dom';
+import Search from './../Search/Search';
+
 
 class Sidebar extends Component {
 
@@ -63,8 +66,9 @@ class Sidebar extends Component {
                 <br/>
                 <br/>
                 <h4>Sidebar</h4>
+                <Search/>
                 <div>
-                    <button onClick={this.onWithoutFiltClick} className='btn btn-secondary'>Сбросить фильтры</button>
+                    <Link to="/"><button onClick={this.onWithoutFiltClick} className='btn btn-secondary'>Сбросить фильтры</button></Link>
                 </div>
                 <div>
                     <button onClick={this.onHotGunClick} className='btn btn-secondary'>Горячее оружее</button>

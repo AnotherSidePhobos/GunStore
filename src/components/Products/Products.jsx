@@ -29,6 +29,7 @@ class Products extends Component {
     fetchPhonesApi(p, this.props.pageSize)
     .then((response) => this.props.fetchPhones(response)
     );
+    window.scrollTo(0, 0)
   }
 
   render() {
@@ -44,20 +45,7 @@ class Products extends Component {
         <div className="main-area">
           <h1>Products</h1>
 
-          <div className='pagination'>
-              {pages.map((p) => {
-                return (
-                  <span
-                    onClick={() => {
-                      this.onPageClick(p)
-                    }}
-                    className={this.props.currentPage === p && s.selected_page}
-                  >
-                    {p}
-                  </span>
-                );
-              })}
-        </div>
+
 
 
               {this.props.items.map((item) => (
@@ -80,6 +68,23 @@ class Products extends Component {
                 </div>
                 </div>
               ))}
+
+
+
+        <div className='pagination'>
+              {pages.map((p) => {
+                return (
+                  <span
+                    onClick={() => {
+                      this.onPageClick(p)
+                    }}
+                    className={this.props.currentPage === p && s.selected_page}
+                  >
+                    {p}
+                  </span>
+                );
+              })}
+        </div>
 
         </div>
     );

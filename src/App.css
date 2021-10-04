@@ -94,10 +94,15 @@
   text-align: center;
 }
 .pagination span{
+
   cursor: pointer;
   padding: 0 10px;
 }
-
+.pagination{
+  max-width: 100px;
+  margin: 0 auto;
+}
+.searchForm input,
 .sidbar button{
   width: 100%;
   margin-bottom: 5px;
@@ -115,3 +120,4 @@ table td{
   min-height: 30px;
   background-color: #b5d4e9;
 }
+

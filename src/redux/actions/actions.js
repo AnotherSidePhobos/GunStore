@@ -8,6 +8,8 @@ const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 const SET_TOTAL_ITEMS_COUNT = 'SET_TOTAL_ITEMS_COUNT';
 const FETCH_ITEMS_BY_CATEGORY = 'FETCH_ITEMS_BY_CATEGORY';
 const SET_PAGE_SIZE = 'SET_PAGE_SIZE';
+const UPDATE_SEARCH_FIELD = 'UPDATE_SEARCH_FIELD';
+const UPDATE_SEARCH_ITEMS = 'UPDATE_SEARCH_ITEMS';
 
 export const fetchPhones = (items) => {
     return {
@@ -58,6 +60,25 @@ export const setPageSize = (pageSize) => {
         pageSize
     }
 }
+export const updateSearchField = (searchTerm) => {
+    debugger
+    return{
+        type: UPDATE_SEARCH_FIELD,
+        payload: searchTerm
+    }
+}
+export const fetchItemsBySearch = (items, searchTerm) => {
+
+    debugger
+    let newItems = items.filter((item) => item.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    debugger
+    return{
+        type: UPDATE_SEARCH_ITEMS,
+        payload: newItems
+    }
+}
+
+
 // export const increaseCount = (id) => {
 //     debugger
 //     return{
